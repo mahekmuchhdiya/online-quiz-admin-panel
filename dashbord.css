@@ -1,0 +1,158 @@
+
+
+
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #d0dae4;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: hwb(319 11% 50%);
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  color: #00cec9;
+}
+
+/* MAIN CONTENT */
+.main {
+  margin-left: 220px;
+  padding: 20px;
+  width: 100%;
+}
+
+.topbar {
+  background: white;
+  padding: 15px 20px;
+  box-shadow: 0 1px 4px rgba(222, 15, 15, 0.845);
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.content {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px #d4caca14;
+}
+
+/* DASHBOARD CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.card h3 {
+  color: #2d3436;
+}
+
+.card p {
+  font-size: 24px;
+  color: #0984e3;
+}
+
+/* FORMS */
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #00b894;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #019875;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #dfe6e9;
+}
+
+.actions button {
+  margin-right: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: hsla(0, 88%, 27%, 0);
+  color: white;
+}
+
+.delete-btn {
+  background: #b2d630;
+  color: white;
+}
